@@ -6,6 +6,8 @@ const map = new mapboxgl.Map({
   zoom: 9 // starting zoom, again you can choose the level you'd like.
     });
     map.addControl(new mapboxgl.FullscreenControl(), 'top-right');
+    map.addControl(new mapboxgl.ScaleControl(), 'bottom-left');
+
 
 
 map.on('load', function() {
